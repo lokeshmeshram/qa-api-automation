@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: saas-automation
+  #  description: A nginx pod for saas-automation testing
+  namespace: default
+  labels:
+    app: web
+spec:
+  containers:
+    - name: saas-automation-container
+      image: nginx
+  restartPolicy: Never

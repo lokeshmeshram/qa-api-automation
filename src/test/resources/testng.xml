@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SaaS Automation Suite" verbose="2">
+    <test name="Cost Management Tests">
+        <classes>
+            <class name="com.automation.platform.shared.services.tests.AzurecostTests" />
+            <class name="com.automation.platform.shared.services.tests.KubecostTests" />
+            <class name="com.automation.platform.shared.services.tests.AWScostTests" />
+        </classes>
+    </test>
+    <test name="Observability Framework Test">
+        <classes>
+            <class name="com.automation.platform.shared.services.tests.ObservabilityInfraDetailsTest" />
+        </classes>
+    </test>
+</suite>
